@@ -8,30 +8,7 @@ const messageData = {
     time: '22:00',
 }
 
-type MessageTypeData = {
-    addMessage : string
-    setAddMessage : Function
-}
-
 function HW1() {
-
-
-
-
-    const [addMessage, setAddMessage] = React.useState<Array<string>>([])
-
-    const sendMessage = (event:React.ChangeEvent<HTMLInputElement>) => {
-        console.log(addMessage)
-        setAddMessage([event.target.value])
-    }
-
-    // let dataMessage:Array<string> = []
-    //
-    // const message = () => {
-    //     dataMessage.push(addMessage)
-    //     console.log(addMessage)
-    // }
-
     return (
         <div>
             <hr/>
