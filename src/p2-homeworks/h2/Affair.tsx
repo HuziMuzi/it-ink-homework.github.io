@@ -18,24 +18,15 @@ function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         props.deleteAffairCallback()
     }// need to fix
-
+    const priorityClass = s.item + ' ' + s[props.affair.priority]
     return (
         <div>
             {/*// show some text*/}
-            <span> {props.affair.name}</span>
-            <span> {props.affair.priority} </span>
-            <button onClick={deleteCallback}>X</button>
-            {/* <table>*/}
-            {/*    <tr>*/}
-            {/*        <td>{props.affair.name}</td>*/}
-            {/*        <td>{props.affair.priority}</td>*/}
-            {/*        <td>*/}
-            {/*            <button onClick={deleteCallback}>X</button>*/}
-            {/*        </td>*/}
-            {/*    </tr>*/}
-            {/*</table>*/}
-
-
+            <div className={s.affair}>
+                <div className={s.item}> {props.affair.name}</div>
+                <div className={priorityClass}> [ {props.affair.priority} ]</div>
+                <button onClick={deleteCallback}>X</button>
+            </div>
         </div>
     )
 }

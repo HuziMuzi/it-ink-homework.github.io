@@ -1,3 +1,17 @@
 .someClass {
 
 }
+
+
+.button {
+    /*background-color: red;*/
+    /*padding: 5px;*/
+    border-radius: 5px;
+    border: none;
+}
+
+.active {
+    opacity: 0.8;
+    background-color: #a8ff8a;
+    font-weight: bold;
+}

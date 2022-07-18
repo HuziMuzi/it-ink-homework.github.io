@@ -1,5 +1,7 @@
-.someClass {
 
+.greeting {
+    display: flex;
+    align-items: flex-start;
 }
 
 .error {
@@ -8,5 +10,22 @@
 
 .errorMessage {
     color: red;
+    height: 20px;
+    margin-left: 10px;
 }
 
+.count {
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+    outline: none;
+}
+
+
+button {
+    margin: 10px;
+    height: 20px;
+    width: 40px;
+}
